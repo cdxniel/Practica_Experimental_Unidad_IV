@@ -178,4 +178,37 @@ Modelado en \textbf{Draw.io / StarUML}, detalla las transiciones de la entidad \
 \end{itemize}
 
 \newpage
+% ==========================================
+% PUNTO 4
+% ==========================================
+
+\subsection*{CAPITULO 4: Aplicación del Estándar IEEE/ISO/IEC 29148:2018 al ERS del Equipo}
+
+El estándar IEEE/ISO/IEC 29148:2018 \cite{iso29148} define el proceso de Ingeniería de Requisitos y establece la estructura recomendada de una Especificación de Requisitos de Software (ERS), así como las características de un requisito bien formado (cláusula 6.4.2): no ambiguo, completo, singular, factible, verificable y trazable. La siguiente tabla documenta cómo el ERS v2.0 del proyecto SGCV-IA aplica estos elementos normativos:
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabularx}{\textwidth}{X X l}
+\toprule
+\textbf{Elemento Normativo (ISO/IEC/IEEE 29148)} & \textbf{Correspondencia en el ERS (SGCV-IA)} & \textbf{Estado} \\
+\midrule
+Estructura del SyRS/SRS (Anexo C): Introducción, descripción general, requisitos específicos. & El ERS v2.0 organiza RF en la Sección 3.2, RNF en 3.3 y restricciones en RST-01 a RST-06. & Conforme \\
+\midrule
+Características de requisito bien formado (cl. 6.4.2): no ambiguo, completo, singular, verificable, trazable. & Cada RF/RNF cuenta con criterios de aceptación (CP-XX) y prioridad MoSCoW; 18 requisitos con trazabilidad. & Conforme \\
+\midrule
+Trazabilidad bidireccional de requisitos (cl. 5.2.11 y 9.5). & Matriz de trazabilidad: EV-XX $\rightarrow$ RF/RNF $\rightarrow$ CU-XX $\rightarrow$ CP-XX, verificable en ambos sentidos. & Conforme \\
+\midrule
+Unicidad y consistencia de identificadores (cl. 6.4.2, caracter\'istica "singular"). & Corrimiento de numeración detectado entre cuerpo del ERS (RF-01 a 23) y Apéndices C y D (RF-01 a 24). & No conforme (en corrección) \\
+\midrule
+Proceso de validación de requisitos (cl. 6.4, Software Requirements Validation). & Aplicado mediante Inspección Formal de Fagan (roles de moderador, lector, inspectores y registro de defectos). & Conforme \\
+\midrule
+Gestión del cambio y configuración (ISO/IEC/IEEE 15288 / 12207). & Simulación del CCB para la RFC-01 (pago con tarjeta), acta de decisión y nueva línea base ERS v2.1 en Git. & Conforme \\
+\bottomrule
+\end{tabularx}
+\caption{Aplicación del estándar IEEE/ISO/IEC 29148:2018 al ERS del proyecto SGCV-IA.}
+\end{table}
+
+\paragraph{Hallazgo de No Conformidad y Acción Correctiva:}
+Al verificar la característica de "singularidad" exigida por la cláusula 6.4.2, el equipo detectó un corrimiento de numeración a partir de RF-22 entre el cuerpo del ERS (23 RFs) y los Apéndices C y D (24 RFs). La acción correctiva —unificar la numeración conservando el criterio del cuerpo del documento— se asignó al gestor de configuración como parte del cierre de la línea base ERS v2.1. En conjunto, la aplicación del estándar rigió el proceso de validación (Fagan), la gestión de cambios (CCB) y el control de versiones en Git.
 
