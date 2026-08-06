@@ -185,7 +185,7 @@ Modelado en \textbf{Draw.io / StarUML}, detalla las transiciones de la entidad \
 
 \subsection*{CAPITULO 3: Cuadro Comparativo de Herramientas CASE para Ingeniería de Requisitos}
 
-De acuerdo con la guía de actividades, se comparan cuatro herramientas CASE de uso frecuente en Ingeniería de Requisitos (IR): *Jira, **IBM Engineering Requirements Management DOORS Next, **Jama Connect* y *ReqView*. Los criterios de evaluación —funcionalidades de IR, trazabilidad, colaboración, integración con sistemas de control de versiones (VCS), costo y curva de aprendizaje— permiten contrastar herramientas de gestión ágil frente a plataformas especializadas para industrias reguladas.
+De acuerdo con la guía de actividades, se comparan cuatro herramientas CASE de uso frecuente en Ingeniería de Requisitos (IR): **Jira**, **IBM Engineering Requirements Management DOORS Next**, **Jama Connect** y **ReqView**. Los criterios de evaluación —funcionalidades de IR, trazabilidad, colaboración, integración con sistemas de control de versiones (VCS), costo y curva de aprendizaje— permiten contrastar herramientas de gestión ágil frente a plataformas especializadas para industrias reguladas.
 
 \begin{table}[h!]
 \centering
@@ -207,7 +207,7 @@ De acuerdo con la guía de actividades, se comparan cuatro herramientas CASE de 
 \end{table}
 
 \paragraph{Análisis de Criterios de Evaluación:}
-Las cuatro herramientas cubren la función mínima de registrar y enlazar requisitos, pero difieren en su nivel de formalidad. *Jira, empleada en el proyecto SGCV-IA, resulta adecuada para la gestión ágil del backlog, aunque su trazabilidad depende de la disciplina manual del equipo. **IBM DOORS Next* y *Jama Connect* ofrecen trazabilidad viva y reportes de cobertura orientados a cumplimiento normativo a costa de mayor costo y complejidad, haciéndolas ideales para proyectos de seguridad crítica. *ReqView* se posiciona como una alternativa intermedia: ofrece plantillas basadas en el estándar ISO/IEC/IEEE 29148:2018 y versionado directo en Git a bajo costo.
+Las cuatro herramientas cubren la función mínima de registrar y enlazar requisitos, pero difieren en su nivel de formalidad. **Jira**, empleada en el proyecto SGCV-IA, resulta adecuada para la gestión ágil del backlog, aunque su trazabilidad depende de la disciplina manual del equipo. **IBM DOORS Next** y **Jama Connect** ofrecen trazabilidad viva y reportes de cobertura orientados a cumplimiento normativo a costa de mayor costo y complejidad, haciéndolas ideales para proyectos de seguridad crítica. **ReqView** se posiciona como una alternativa intermedia: ofrece plantillas basadas en el estándar ISO/IEC/IEEE 29148:2018 y versionado directo en Git a bajo costo.
 
 \paragraph{Recomendación para el Proyecto SGCV-IA:}
 Para el alcance académico, Jira es suficiente para el seguimiento de historias y tareas. Sin embargo, si el sistema avanza hacia fases de certificación por el manejo de datos clínicos e información de pago, herramientas como ReqView o Jama Connect aportarían trazabilidad formal adicional sin duplicar esfuerzos.
@@ -300,6 +300,8 @@ ISO/IEC/IEEE, "Software and systems engineering — Software testing — Part 1:
 \bibitem{hull2011}
 E. Hull, K. Jackson, and J. Dick, \textit{Requirements Engineering}, 3rd ed. London, UK: Springer-Verlag, 2011.
 
+% Nuevas referencias integradas del documento (manteniendo orden IEEE desde el 16):
+
 \bibitem{jira}
 Atlassian, "Jira Software," atlassian.com. [En línea]. Disponible: https://www.atlassian.com/software/jira
 
@@ -337,3 +339,5 @@ The Digital Project Manager, "10 Best Requirements Management Tools Reviewed for
 AlternativeTo, "ReqView," alternativeto.net, 2026.
 
 \end{thebibliography}
+
+\end{document}
