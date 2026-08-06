@@ -211,4 +211,90 @@ Gestión del cambio y configuración (ISO/IEC/IEEE 15288 / 12207). & Simulación
 
 \paragraph{Hallazgo de No Conformidad y Acción Correctiva:}
 Al verificar la característica de "singularidad" exigida por la cláusula 6.4.2, el equipo detectó un corrimiento de numeración a partir de RF-22 entre el cuerpo del ERS (23 RFs) y los Apéndices C y D (24 RFs). La acción correctiva —unificar la numeración conservando el criterio del cuerpo del documento— se asignó al gestor de configuración como parte del cierre de la línea base ERS v2.1. En conjunto, la aplicación del estándar rigió el proceso de validación (Fagan), la gestión de cambios (CCB) y el control de versiones en Git.
+% ==========================================
+% REFERENCIAS BIBLIOGRÁFICAS (IEEE)
+% ==========================================
+\begin{thebibliography}{99}
 
+\bibitem{pohl2010}
+K. Pohl, \textit{Requirements Engineering: Fundamentals, Principles, and Techniques}. Berlin, Germany: Springer-Verlag, 2010.
+
+\bibitem{pressman2010}
+R. S. Pressman, \textit{Software Engineering: A Practitioner's Approach}, 7th ed. New York, NY, USA: McGraw-Hill, 2010.
+
+\bibitem{elmasri2016}
+R. Elmasri and S. B. Navathe, \textit{Fundamentals of Database Systems}, 7th ed. Boston, MA, USA: Pearson, 2016.
+
+\bibitem{maciaszek2007}
+L. A. Maciaszek, \textit{Requirements Analysis and System Design}, 3rd ed. Boston, MA, USA: Addison-Wesley, 2007.
+
+\bibitem{yourdon1989}
+E. Yourdon, \textit{Modern Structured Analysis}. Englewood Cliffs, NJ, USA: Prentice-Hall, 1989.
+
+\bibitem{sommerville2011}
+I. Sommerville, \textit{Software Engineering}, 9th ed. Boston, MA, USA: Addison-Wesley, 2011.
+
+\bibitem{harel1987}
+D. Harel, "Statecharts: A visual formalism for complex systems," \textit{Science of Computer Programming}, vol. 8, no. 3, pp. 231–274, 1987.
+
+\bibitem{booch2007}
+G. Booch, J. Rumbaugh, and I. Jacobson, \textit{The Unified Modeling Language User Guide}, 2nd ed. Upper Saddle River, NJ, USA: Addison-Wesley Professional, 2007.
+
+\bibitem{iso29148}
+ISO/IEC/IEEE, "Systems and software engineering — Life cycle processes — Requirements engineering," \textit{ISO/IEC/IEEE Standard 29148:2018}, 2018. doi: 10.1109/IEEESTD.2018.8559686
+
+\bibitem{wiegers2013}
+K. Wiegers and J. Beatty, \textit{Software Requirements}, 3rd ed. Redmond, WA, USA: Microsoft Press, 2013.
+
+\bibitem{iso25010}
+ISO/IEC, "Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality models," \textit{ISO/IEC Standard 25010:2023}, 2023.
+
+\bibitem{fagan1976}
+M. E. Fagan, "Design and code inspections to reduce errors in program development," \textit{IBM Systems Journal}, vol. 15, no. 3, pp. 182–211, 1976.
+
+\bibitem{ambler2012}
+S. W. Ambler and M. Lines, \textit{Disciplined Agile Delivery: A Practitioner's Guide to Agile Software Delivery in the Enterprise}. Boston, MA, USA: IBM Press, 2012.
+
+\bibitem{iso29119}
+ISO/IEC/IEEE, "Software and systems engineering — Software testing — Part 1: Concepts and definitions," \textit{ISO/IEC/IEEE Standard 29119-1:2017}, 2017.
+
+\bibitem{hull2011}
+E. Hull, K. Jackson, and J. Dick, \textit{Requirements Engineering}, 3rd ed. London, UK: Springer-Verlag, 2011.
+
+\bibitem{jira}
+Atlassian, "Jira Software," atlassian.com. [En línea]. Disponible: https://www.atlassian.com/software/jira
+
+\bibitem{ibmDoors}
+SodiusWillert, "IBM Engineering Requirements Management DOORS," sodiuswillert.com, 2026.
+
+\bibitem{ibmProduct}
+IBM, "IBM Engineering Requirements Management," ibm.com. [En línea]. Disponible: https://www.ibm.com/products/requirements-management
+
+\bibitem{peerspot}
+PeerSpot, "IBM DOORS Reviews," peerspot.com, 2026.
+
+\bibitem{mgtech}
+MG Tech Soft, "A Complete Guide: Requirements Management with DOORS Next," mgtechsoft.com, 2026.
+
+\bibitem{gartnerJama}
+Gartner Peer Insights, "Jama Connect Reviews \& Ratings," gartner.com, 2026.
+
+\bibitem{g2jama}
+G2, "Jama Connect Reviews, Details, Pricing \& Features," g2.com, 2026.
+
+\bibitem{capterraReq}
+Capterra, "ReqView Software Pricing, Alternatives \& More," capterra.com, 2026.
+
+\bibitem{saashubReq}
+SaaSHub, "ReqView Reviews," saashub.com, 2026.
+
+\bibitem{getappReq}
+GetApp, "ReqView Pricing, Features, Reviews \& Alternatives," getapp.com, 2026.
+
+\bibitem{digitalProject}
+The Digital Project Manager, "10 Best Requirements Management Tools Reviewed for 2026," thedigitalprojectmanager.com, 2026.
+
+\bibitem{alternativeReq}
+AlternativeTo, "ReqView," alternativeto.net, 2026.
+
+\end{thebibliography}
