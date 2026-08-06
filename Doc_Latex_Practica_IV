@@ -176,6 +176,9 @@ Modelado en \textbf{Draw.io / StarUML}, detalla las transiciones de la entidad \
     \item \textbf{En Atención}: Ingreso con \texttt{llegadaMascota == True} e inicio de consulta por veterinario.
     \item \textbf{Finalizada}: Disparado tras registro de diagnóstico, tratamiento y receta médica.
 \end{itemize}
+
+\newpage
+
 % ==========================================
 % PUNTO 3
 % ==========================================
@@ -210,7 +213,7 @@ Las cuatro herramientas cubren la función mínima de registrar y enlazar requis
 Para el alcance académico, Jira es suficiente para el seguimiento de historias y tareas. Sin embargo, si el sistema avanza hacia fases de certificación por el manejo de datos clínicos e información de pago, herramientas como ReqView o Jama Connect aportarían trazabilidad formal adicional sin duplicar esfuerzos.
 
 \newpage
-\newpage
+
 % ==========================================
 % PUNTO 4
 % ==========================================
@@ -244,6 +247,9 @@ Gestión del cambio y configuración (ISO/IEC/IEEE 15288 / 12207). & Simulación
 
 \paragraph{Hallazgo de No Conformidad y Acción Correctiva:}
 Al verificar la característica de "singularidad" exigida por la cláusula 6.4.2, el equipo detectó un corrimiento de numeración a partir de RF-22 entre el cuerpo del ERS (23 RFs) y los Apéndices C y D (24 RFs). La acción correctiva —unificar la numeración conservando el criterio del cuerpo del documento— se asignó al gestor de configuración como parte del cierre de la línea base ERS v2.1. En conjunto, la aplicación del estándar rigió el proceso de validación (Fagan), la gestión de cambios (CCB) y el control de versiones en Git.
+
+\newpage
+
 % ==========================================
 % REFERENCIAS BIBLIOGRÁFICAS (IEEE)
 % ==========================================
