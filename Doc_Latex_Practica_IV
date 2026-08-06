@@ -1,0 +1,181 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{graphicx}
+
+\begin{document}
+
+% ==========================================
+% PORTADA
+% ==========================================
+\begin{titlepage}
+    \centering
+    \vspace*{0.5cm}
+    
+    {\bfseries\large UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO \par}
+    \vspace{1cm}
+    
+    {\bfseries\large PRÁCTICA EXPERIMENTAL - UNIDAD IV \par}
+    \vspace{1.2cm}
+    
+    {\bfseries TEMA: \par}
+    {\bfseries SGCV-IA - SISTEMA DE GESTIÓN CLÍNICA VETERINARIA INTELIGENTE \par}
+    \vspace{1.2cm}
+    
+    {\bfseries INTEGRANTES \par}
+    \vspace{0.4cm}
+    Barrionuevo Fuentes Carlos Daniel \par
+    Alvia Villegas Erick Adalberto \par
+    Alcivar Velez Adonis Anderson \par
+    \vspace{1.2cm}
+    
+    {\bfseries ASIGNATURA: \par}
+    INGENIERÍA DE REQUERIMIENTOS \par
+    \vspace{1.2cm}
+    
+    {\bfseries CURSO: \par}
+    4TO "A" SOFTWARE \par
+    \vspace{1.2cm}
+    
+    {\bfseries FECHA: \par}
+    05/08/2026 \par
+    \vspace{1.2cm}
+    
+    {\bfseries DOCENTE: \par}
+    Ing. Guerrero Ulloa Gleiston Ciceron \par
+    \vspace{1.2cm}
+    
+    {\bfseries LINK DE GITHUB: \par}
+    \url{https://github.com/tu-usuario/tu-repositorio}
+    
+    \vfill
+\end{titlepage}
+
+\newpage
+
+% ==========================================
+% DESARROLLO DEL TRABAJO
+% ==========================================
+
+\section*{PRÁCTICA EXPERIMENTAL UNIDAD IV}
+
+\subsection*{CAPITULO 1: Enfoque Investigativo.}
+
+\subsubsection*{1. Validación de Requisitos}
+La validación es la fase de la Ingeniería de Requisitos orientada a certificar que la Especificación de Requisitos de Software (ERS) refleje con precisión las necesidades de los interesados antes de continuar con la arquitectura y desarrollo \cite{pohl2010, pressman2010}.
+
+\begin{itemize}
+    \item \textbf{Modelos de datos (ER y Clases UML):} Constituyen la representación estática del dominio. El Modelo Entidad-Relación (ER) abstrae las entidades de negocio, sus atributos esenciales y las cardinalidades asociadas \cite{elmasri2016}. En el modelado orientado a objetos, el Diagrama de Clases UML traduce dichas entidades incorporando visibilidad, tipos de datos concretos y comportamientos operativos traducidos en métodos CRUD (\textit{Create, Read, Update, Delete}) y lógica de negocio \cite{maciaszek2007}.
+    \item \textbf{Modelos funcionales (DFD y Actividades UML):} Representan la transformación de datos e información mediante procesos del sistema. Los Diagramas de Flujo de Datos (DFD) descomponen jerárquicamente la funcionalidad mediante un Diagrama de Contexto (Nivel 0), DFD Nivel 1 y DFDs Esenciales, independizando la lógica operacional de decisiones tecnológicas \cite{pohl2010, yourdon1989}. El Diagrama de Actividades UML detalla la lógica secuencial, decisiones condicionales y flujos concurrentes (\textit{fork/join}) en la ejecución de los casos de uso \cite{sommerville2011}.
+    \item \textbf{Modelos de comportamiento (Máquinas de Estado y Secuencia):} Capturan la dinámica del sistema frente a eventos externos. Los diagramas de Máquinas de Estado (\textit{statecharts}) representan las transiciones entre estados válidos del ciclo de vida de una entidad clave frente a eventos con condiciones de guarda \cite{harel1987, booch2007}. Los Diagramas de Secuencia UML detallan la ordenación temporal del intercambio de mensajes síncronos y asíncronos entre objetos instanciados para cumplir un escenario operativo \cite{maciaszek2007}.
+    \item \textbf{Interrelación entre las tres perspectivas:} Un modelo de requisitos completo exige una correspondencia biunívoca entre sus dimensiones: cada entidad del modelo de datos es accedida o modificada por procesos definidos en los DFD, mientras que las transiciones de estado de los objetos son desencadenadas por las actividades funcionales del sistema \cite{pohl2010, maciaszek2007}.
+\end{itemize}
+
+\subsubsection*{2. Gestión de Requisitos}
+La gestión de requisitos agrupa las actividades de evaluación, seguimiento y control continuo de los requisitos a lo largo del ciclo de vida del software \cite{iso29148, wiegers2013}.
+
+\begin{itemize}
+    \item \textbf{Principios de validación y aseguramiento de la calidad:} Tienen por objetivo verificar que las especificaciones cumplan con los atributos de calidad definidos por la norma ISO/IEC 25010: no ambigüedad, completitud, consistencia, verificabilidad y trazabilidad \cite{iso25010}.
+    \item \textbf{Técnicas de evaluación:} Abarcan desde revisiones informales e inspecciones dirigidas (\textit{walkthroughs}) hasta Inspecciones Formales de Fagan. Estas últimas se basan en un proceso estructurado por etapas (planificación, preparación individual, reunión de inspección, reescritura) y roles definidos (moderador, autor, lector, inspector) para detectar defectos tempranamente \cite{pohl2010, fagan1976}.
+    \item \textbf{Prototipado y validación de escenarios:} La construcción de prototipos navegables (de baja o alta fidelidad) permite a los usuarios validar mediante la experiencia interactiva el flujo de pantallas y requisitos funcionales, corrigiendo desviaciones a bajo costo \cite{sommerville2011, wiegers2013}.
+    \item \textbf{Pruebas de aceptación:} Definen los criterios formales que determinan si el sistema satisface los requerimientos del cliente. Comprenden escenarios funcionales, pruebas no funcionales (desempeño, seguridad) y pruebas de regresión vinculadas a cada requisito \cite{pressman2010, wiegers2013}.
+\end{itemize}
+
+\subsubsection*{3. Herramientas, Estándares e IR Ágil}
+\begin{itemize}
+    \item \textbf{Naturaleza iterativa y contexto:} En entornos cambiantes, la Ingeniería de Requisitos (IR) adopta un enfoque iterativo donde los requisitos se refinan y priorizan constantemente en cada ciclo o \textit{sprint}, manteniendo sincronizados el contexto del problema y el \textit{product backlog} \cite{wiegers2013, ambler2012}.
+    \item \textbf{Gestión del cambio (CCB):} El Comité de Control de Cambios (\textit{Change Control Board}) es el organismo encargado de evaluar el impacto técnico, financiero y operativo de las Solicitudes de Cambio (RFC), autorizando o rechazando modificaciones sobre las versiones aprobadas \cite{pressman2010, iso29119}.
+    \item \textbf{Seguimiento y trazabilidad:} La trazabilidad (\textit{pre-RS} para rastrear el origen del requisito en los clientes, y \textit{post-RS} para relacionar requisitos con componentes de código y casos de prueba) garantiza el control integral frente al impacto de los cambios \cite{wiegers2013, hull2011}.
+    \item \textbf{Priorización y Baselines:} Mediante esquemas de priorización como la técnica MoSCoW (\textit{Must, Should, Could, Won't}) o la matriz costo-beneficio, se establecen Líneas Base (\textit{Baselines}) que formalizan versiones estables del sistema sujetas a control de configuración \cite{iso29148, wiegers2013}.
+\end{itemize}
+
+\subsubsection*{4. Ingeniería de Requisitos en Procesos Ágiles}
+\begin{itemize}
+    \item \textbf{Herramientas CASE y Estándares:} La adopción de herramientas CASE (\textit{Computer-Aided Software Engineering}) facilita la gestión del ciclo de vida de los requisitos y su modelado, garantizando el cumplimiento de estándares internacionales de documentación como ISO/IEC/IEEE 29148:2018 y el modelo de calidad ISO/IEC 25010 \cite{iso29148, iso25010}.
+    \item \textbf{Atributos y Trazabilidad CASE:} Las herramientas CASE permiten configurar atributos estructurados por cada requisito (ID, prioridad MoSCoW, versión, estado, fuente) y exportar la trazabilidad en formatos estandarizados de intercambio como ReqIF (\textit{Requirements Interchange Format}) \cite{iso29148, hull2011}.
+\end{itemize}
+
+\newpage
+
+% ==========================================
+% PUNTO 2
+% ==========================================
+
+\subsection*{CAPITULO 2: Demostración de Uso de Herramientas CASE Aplicadas al Sistema de Gestión Clínica Veterinaria (SGCV-IA)}
+
+Para cumplir con la aplicación práctica exigida sobre el \textbf{Sistema de Gestión Clínica Veterinaria (SGCV-IA)}, se utilizaron dos herramientas CASE complementarias: \textbf{Jira Software} (Gestión de Requisitos) y \textbf{StarUML / Draw.io} (Modelado de Sistemas).
+
+\subsubsection*{A. Herramienta CASE de Gestión de Requisitos: Jira Software}
+Se configuró un proyecto en Jira Software adaptado a los requisitos extraídos de la arquitectura funcional del SGCV-IA, aplicando el estándar IEEE 29148 \cite{iso29148}.
+
+\paragraph{1. Historias de Usuario / Requisitos Funcionales Configurados:}
+\begin{itemize}
+    \item \textbf{SGCV-RF01 (Registro Móvil/Web):} \textit{Registrar Cliente y Paciente.} El sistema debe permitir el registro completo de la información del propietario y los datos clínicos de la mascota (nombre, raza, especie, edad).
+    \item \textbf{SGCV-RF02 (Gestión Clínica):} \textit{Apertura de Atención Clínica.} El sistema debe permitir al veterinario aperturar una consulta registrando los síntomas observados y constantes vitales.
+    \item \textbf{SGCV-RF03 (Integración IA):} \textit{Procesar Recomendación por IA.} El sistema debe enviar la descripción sintomática al motor de IA para retornar sugerencias diagnósticas acompañadas de respaldo bibliográfico.
+    \item \textbf{SGCV-RF04 (Tratamiento e Inventario):} \textit{Emisión de Orden de Tratamiento e Inventario.} El sistema debe generar la receta médica y descontar automáticamente los medicamentos prescritos del stock general.
+\end{itemize}
+
+\paragraph{2. Matriz de Atributos Configurada en Jira:}
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabularx}{\textwidth}{l l X l l X}
+\toprule
+\textbf{ID} & \textbf{Tipo} & \textbf{Descripción} & \textbf{MoSCoW} & \textbf{Estado} & \textbf{Criterio Verificación} \\
+\midrule
+SGCV-RF01 & Funcional & Registro Propietario y Mascota & Must Have & Aprobado & Valida cédula única y crea ficha médica. \\
+SGCV-RF02 & Funcional & Apertura Atención Clínica & Must Have & En Proceso & Habilita captura tras confirmar cita. \\
+SGCV-RF03 & Funcional & Consulta Diagnóstica por IA & Should Have & Propuesto & Respuesta IA $<3$s con bibliografía. \\
+SGCV-RF04 & Funcional & Receta e Inventario & Must Have & Aprobado & Descuenta stock; bloquea si $<1$. \\
+\bottomrule
+\end{tabularx}
+\caption{Matriz de atributos configurada en herramienta CASE Jira.}
+\end{table}
+
+\subsubsection*{B. Herramienta CASE de Modelado UML: StarUML / Draw.io}
+
+\paragraph{1. Diagrama de Secuencia: Flujo de Atención Clínica y Diagnóstico por IA}
+Modelado en \textbf{StarUML}, representa el intercambio de mensajes temporal para el requisito \texttt{SGCV-RF03}:
+
+\begin{enumerate}
+    \item \texttt{Veterinario} $\rightarrow$ \texttt{:UI\_RegistroConsulta}: \texttt{ingresarSintomas(datosMascota, listaSintomas)}
+    \item \texttt{:UI\_RegistroConsulta} $\rightarrow$ \texttt{:ControladorAtencion}: \texttt{procesarConsulta(datosMascota, sintomas)}
+    \item \texttt{loop [por cada síntoma en lista]}:
+    \begin{itemize}
+        \item \texttt{:ControladorAtencion} $\rightarrow$ \texttt{:HistorialClinico}: \texttt{validarHistorialPrevio(idMascota)}
+    \end{itemize}
+    \item \texttt{:ControladorAtencion} $\rightarrow$ \texttt{:ServicioDiagnosticoIA}: \texttt{solicitarDiagnosticoIA(sintomas)}
+    \item \texttt{:ServicioDiagnosticoIA} $\dashrightarrow$ \texttt{:ControladorAtencion}: \texttt{retornarSugerencias(diagnosticos[], citas[])}
+    \item \texttt{alt [Veterinario Acepta Recomendación]}:
+    \begin{itemize}
+        \item \texttt{:ControladorAtencion} $\rightarrow$ \texttt{:HistorialClinico}: \texttt{guardarDiagnosticoConfirmado(idIA)}
+        \item \texttt{else [Veterinario Modifica / Rechaza]}:
+        \item \texttt{:ControladorAtencion} $\rightarrow$ \texttt{:HistorialClinico}: \texttt{guardarDiagnosticoManual(criterioVet)}
+    \end{itemize}
+    \item \texttt{:ControladorAtencion} $\dashrightarrow$ \texttt{:UI\_RegistroConsulta}: \texttt{confirmarRegistroExitoso()}
+\end{enumerate}
+
+\paragraph{2. Máquina de Estados UML: Ciclo de Vida de la Cita Médica}
+Modelado en \textbf{Draw.io / StarUML}, detalla las transiciones de la entidad \texttt{CitaMédica}:
+
+\begin{itemize}
+    \item \textbf{Estado Inicial} $\rightarrow$ Evento \texttt{solicitarCita()} $\rightarrow$ \textbf{Solicitada}.
+    \item \textbf{Solicitada} $\rightarrow$ Evento \texttt{asignarVeterinarioYHorario()} $\rightarrow$ \textbf{Programada}.
+    \item \textbf{Programada}: Subestado \textit{Pendiente de Confirmación} $\rightarrow$ Evento \texttt{clienteConfirma()} $\rightarrow$ \textit{Confirmada}.
+    \item \textit{Excepción 1:} Evento \texttt{sinCheckIn()} $\rightarrow$ \textbf{No Asistió}.
+    \item \textit{Excepción 2:} Evento \texttt{clienteCancela()} $\rightarrow$ \textbf{Cancelada}.
+    \item \textbf{En Atención}: Ingreso con \texttt{llegadaMascota == True} e inicio de consulta por veterinario.
+    \item \textbf{Finalizada}: Disparado tras registro de diagnóstico, tratamiento y receta médica.
+\end{itemize}
+
+\newpage
+
